@@ -24,6 +24,7 @@ export default class App extends Component<Props> {
         />
 
         <TouchableOpacity
+          style={ styles.fullscreenButton }
           onPress={ () => {
             if (this.player) {
               this.player.presentFullscreenPlayer();
@@ -43,5 +44,8 @@ const styles = StyleSheet.create({
   },
   video: {
     height: 300
+  },
+  fullscreenButton: {
+    alignSelf: 'center'
   }
 });
